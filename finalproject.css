@@ -1,0 +1,194 @@
+header {
+  background-color:#B4A7D6FF;
+  font-family:"Calistoga", serif;
+  padding:7px;
+  text-align:center;
+}
+.container {
+  display:grid;
+  grid-template-columns:0.5fr 3.5fr;
+  height:87vh;
+}
+.child1 {
+  background-color:#c4bade;
+  padding-right:10px;
+  margin:0;
+  padding-top:5px;
+}
+.child2 {
+  background-color:#D9D2E9FF;
+  padding-left:10px;
+  margin:0;
+  padding-top:20px;
+  padding-bottom:20px;
+  font-family:arial;
+}
+.borders {
+  border-color:#351C75;
+  border-style:dotted;
+  margin-top:5px;
+  text-align:center;
+}
+ul.a {
+  list-style-type:none;
+  font-family:"Calistoga", serif;
+  font-size:25px;
+}
+ul.b {
+  list-style-position:inside;
+}
+ul.c {
+  color:green;
+  display:inline-block;
+  list-style-position:inside;
+}
+ul.d {
+  color:goldenrod;
+  display:inline-block;
+  list-style-position:inside;
+}
+ul.e {
+  color:red;
+  display:inline-block;
+  list-style-position:inside;
+}
+ol {
+  list-style-position:inside;
+}
+span {
+  text-align:center;
+  color:black;
+  text-decoration:underline;
+  display:block;
+  margin-bottom:2px;
+}
+.small {
+  font-size:75%;
+  text-decoration:none;
+}
+.child1 li {
+  margin:20px;
+}
+li a {
+  color:black;
+  text-decoration:none;
+  list-style-position:inside;
+}
+h3 {
+  font-family:"Calistoga", serif;
+  font-size:20px;
+}
+h4 {
+  font-weight:20px;
+  text-decoration:underline;
+}
+h2 {
+  text-align:center;
+  font-family:"Calistoga", serif;
+}
+a:link {
+  color:black;
+}
+a:visited {
+  color:#634C9A;
+}
+a:hover {
+  color:#b4a7d6;
+}
+a:active {
+  color:white;
+}
+img {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  border:solid #351C75;
+}
+table {
+  background-color:#B4A7D6FF;
+  border:1.5px solid #006600;
+  border-collapse:collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  padding:0.5em;
+  border:1px solid #351C75;
+}
+form {
+  float:center;
+}
+label {
+  float:left;
+  display:block;
+  text-align:right;
+  width:125px;
+  padding-right:2em;
+}
+input {
+  display:block;
+  margin-bottom:20px
+}
+textarea {
+  display:block;
+  margin-bottom:20px
+}
+input[type="submit"] {
+  margin-left: 135px;
+}
+@media only screen and (max-width: 37.5em) {
+	.child1 {
+		text-align:center;
+		margin:0;
+	}
+	ul.a {
+		margin:0;
+		padding:0;
+		display: grid;
+		grid-template-areas: "stack";
+	}
+	.child1 a {
+		display:block;
+		padding:5px;
+		border-bottom:2px solid black;
+		grid-area:stack;
+	}
+	.child li {
+		display:block;
+		margin:0;
+		padding:0;
+		grid-area: stack;
+		border-bottom:2px solid black;
+
+	}
+	td {
+		font-size:10px;
+	}
+	label {
+	float: none; 
+	text-align:left;
+  }
+  input[type=”submit”] {
+	margin-left:0
+  }
+}
+@media only screen and (max-width: 64em) {
+  .child1 {
+	width:auto;
+	text-align:center;
+	padding-bottom:0.5em;
+  }
+  ul.a {
+	font-size:15px;
+	text-align:center;
+  }
+  .child1 li {
+	display:inline;
+	margin:5px;
+  }
+  .container {
+	display:inline;
+	
+  }
+  }
+}
